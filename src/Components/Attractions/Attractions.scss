@@ -1,0 +1,35 @@
+@use "../../assets/scss/reset.scss" as *;
+@use "../../assets/scss/variables.scss" as *;
+
+.attraction {
+	background-color: aqua;
+
+	&__post {
+		width: 270px;
+		position: relative;
+	}
+
+	&__image {
+		width: 100%;
+	}
+
+	&__text-block {
+		width: -webkit-fill-available;
+		padding-left: 10px;
+		padding-right: 10px;
+		position: absolute;
+		bottom: 20px;
+		color: $color-white;
+	}
+
+	&__text-more{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;		
+	}
+
+	&__text,
+	&__more {
+		cursor: pointer;
+	}
+}

@@ -1,5 +1,12 @@
 export const Header = () => {
+
 	return (
-		<h1><Header></Header></h1>
+<h1 > sdfbghdhb</h1 >
+
+
 	)
+	
+
 }
+
+	
