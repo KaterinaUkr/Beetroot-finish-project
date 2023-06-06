@@ -3,6 +3,7 @@
 
 .attraction {
 	background-color: aqua;
+	// width: 80%;
 
 	&__post {
 		width: 270px;
@@ -20,6 +21,8 @@
 		position: absolute;
 		bottom: 20px;
 		color: $color-white;
+
+		
 	}
 
 	&__text-more{
