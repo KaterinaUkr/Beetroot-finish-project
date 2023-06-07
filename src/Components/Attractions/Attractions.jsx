@@ -1,6 +1,6 @@
-import { Card } from 'react-bootstrap'
+// import { Card } from 'react-bootstrap'
 import './Attractions.scss'
-import attraction1 from '../../../src/assets/images/Attraction_1.jpg';
+// import attraction1 from '../../../src/assets/images/Attraction_1.jpg';
 import Posts from '../../Datafiles/Attraction.json'
 
 import "slick-carousel/slick/slick.css";
