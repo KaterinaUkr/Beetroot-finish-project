@@ -1,6 +1,6 @@
-import { Button } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 import './Attractions.scss'
-// import attraction1 from '../../../src/assets/images/Attraction_1.jpg';
+
 import Posts from '../../Datafiles/Attraction.json'
 
 import "slick-carousel/slick/slick.css";
@@ -25,17 +25,20 @@ export const Attractions = () => {
 				{
 					Posts.map(({ id, title, url }) => 
 					<li key={id}>
-						<div className='attraction__post'>
-						<img className='attraction__image' src={url} alt="Card attraction" />
-								<div className='attraction__text-block'>
-									<h3 className='attraction__text-block__title'>{title}</h3>
-								</div>
-							<hr />
-							<div className='attraction__text-more'>
-								<a href="#" className='attraction__text'>Подробиці</a>
-								<a href="#" className='attraction__more'>&#10230;</a>
+						<Card className="bg-dark text-white attraction__post">
+						<Card.Img src={url} alt="Card image" className='attraction__image'/>
+						<Card.ImgOverlay>
+							<div className='attraction__text-block'>
+								<Card.Title className='attraction__text-block__title'>{title}</Card.Title>							
 							</div>
-						</div>
+								<hr />
+							<div className='attraction__text-more'>
+								<Card.Text href="#" className='attraction__text'>Подробиці</Card.Text>
+								<Card.Text href="#" className='attraction__more'>&#10230;</Card.Text>
+							</div>
+							
+						</Card.ImgOverlay>			
+						</Card>
 					</li>
 				
 			)}	

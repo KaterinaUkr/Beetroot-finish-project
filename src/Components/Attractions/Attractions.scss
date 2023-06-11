@@ -2,12 +2,12 @@
 @use "../../assets/scss/variables.scss" as *;
 
 .attraction {
-	background-color: aqua;
+	background-color: rgb(205, 247, 247);
 	// width: 80%;
 
 	&__post {
 		width: 270px;
-		position: relative;
+		
 	}
 
 	&__image {
@@ -17,12 +17,9 @@
 	&__text-block {
 		width: -webkit-fill-available;
 		padding-left: 10px;
-		padding-right: 10px;
-		position: absolute;
+		padding-right: 10px;		
 		bottom: 20px;
-		color: $color-white;
-
-		
+		color: $color-white;		
 	}
 
 	&__text-more{

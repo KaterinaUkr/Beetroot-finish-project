@@ -1,11 +1,9 @@
 export const Header = () => {
 
 	return (
-<h1 > sdfbghdhb</h1 >
-
+<h1 > Header</h1 >
 
 	)
-	
 
 }
 
