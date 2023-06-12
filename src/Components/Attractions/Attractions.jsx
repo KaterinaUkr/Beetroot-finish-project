@@ -44,7 +44,7 @@ export const Attractions = () => {
 			)}	
 
 			 </Slider>
-			<Button href="#" variant="secondary">Показати всі</Button>
+			<Button href="/attractions" variant="secondary">Показати всі</Button>
 			</div>
 		
 		

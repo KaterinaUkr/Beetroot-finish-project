@@ -4,7 +4,7 @@ import Videos from '../../Datafiles/Video.json'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 
 export const Video = () => {
 	const settings = {
@@ -30,6 +30,8 @@ export const Video = () => {
 			)}	
 
 			</Slider>
+
+			<Button href="/videos" variant="secondary">Всі відео</Button>
 			
 		</div>
 		

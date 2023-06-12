@@ -1,6 +1,8 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
+import './Header.scss'
+
 export const Header = () => {
 	const navigate = useNavigate();
 
@@ -9,7 +11,7 @@ export const Header = () => {
 		navigate(to)
 	}
 	return (
-	<Navbar bg="dark" variant="dark">
+	<Navbar variant="dark" className='header-menu'>
 		<Container>
 			{/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
 			<Nav className="me-auto">

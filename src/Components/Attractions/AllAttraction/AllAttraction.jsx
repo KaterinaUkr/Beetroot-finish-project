@@ -25,7 +25,7 @@ export const AllAttraction = () => {
 				</li>
 				)}
 			
-			<Button href="#" variant="secondary">Повернутись</Button>
+			<Button href="/" variant="secondary">На головну</Button>
 				
 		</div>
 	</ContentWrap>		
