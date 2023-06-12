@@ -1,10 +1,12 @@
 import { Button, Card } from 'react-bootstrap'
 import Posts from '../../../Datafiles/Attraction.json'
+import { ContentWrap } from '../../Main/ContentWrap'
 
 
 export const AllAttraction = () => {
 
 	return (
+	<ContentWrap>
 		<div className='attraction'>		
 			<h2 className='attraction__title'>Що подивитись</h2>
 			{
@@ -26,8 +28,6 @@ export const AllAttraction = () => {
 			<Button href="#" variant="secondary">Повернутись</Button>
 				
 		</div>
-
-		
-		
+	</ContentWrap>		
 	)
 }

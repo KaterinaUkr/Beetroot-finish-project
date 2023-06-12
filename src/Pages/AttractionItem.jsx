@@ -1,0 +1,1 @@
+export const AttractionItem = () => <h1>AttractionItem</h1>
