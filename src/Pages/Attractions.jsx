@@ -1,1 +1,1 @@
-export const Attractions = () => <h1>Attractions</h1>
+// export const Attractions = () => <h1>Attractions</h1>

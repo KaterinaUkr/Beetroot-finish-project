@@ -1,1 +1,5 @@
-export const AttractionItem = () => <h1>AttractionItem</h1>
+import { AttractionItem as AttractionItemComponent } from '../Components/Attractions/AttractionItem/AttractionItem'
+
+export const AttractionItem = () => <AttractionItemComponent></AttractionItemComponent>
+	
+	
