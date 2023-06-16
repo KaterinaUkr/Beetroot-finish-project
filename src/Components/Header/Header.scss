@@ -1,5 +1,25 @@
+@use "../../assets/scss/variables.scss" as *;
+
 .header-menu {
-	position: absolute;
 	width: 100%;
-	color: blue;
+	background-color: rgba(0, 0, 0, 0.8);
+	
+	&__nav {
+		
+	}
+	
+}
+
+
+.navbar-expand {
+ 	z-index: 1; 	
+ 	position: absolute;
+	width: 100%;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+	color: $color-yellow-light;
+	
+	font-family: 'Lora';
+	padding: 10px 30px;
 }

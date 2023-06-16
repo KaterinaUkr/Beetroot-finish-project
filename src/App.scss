@@ -1,4 +1,9 @@
 @use "/src/assets/scss/reset.scss";
+@use './assets/scss/font.scss';
+
+#root {
+	background-color: rgba(0, 0, 0, 0.95);
+}
 
 // .App {
 //   text-align: center;
