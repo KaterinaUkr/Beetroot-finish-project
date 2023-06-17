@@ -18,10 +18,10 @@ export const Video = () => {
 	return (
 		<div className='video-section'>		
 			<h2 className='video__title'>Here must be Video</h2>			
-			<iframe width="640" height="360" src='https://www.youtube.com/embed/tTEqV_wO54Q' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+			{/* <iframe width="640" height="360" src='https://www.youtube.com/embed/tTEqV_wO54Q' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
 			
 			{/* працює, але видає помилки  */}
-			{/* <Slider {...settings}>
+			<Slider {...settings}>
 				{
 					Videos.map(({ id, title, url }) =>
 					<li key={id}>
@@ -32,7 +32,7 @@ export const Video = () => {
 					
 			)}
 
-			</Slider> */}
+			</Slider>
 
 			<Button href="/videos" variant="secondary">Всі відео</Button>
 			

@@ -4,6 +4,7 @@ import { Attractions } from '../Attractions/Attractions';
 import { Video } from '../Video/Video';
 import { Interesting } from '../Interesting/Interesting';
 import { ContentWrap } from './ContentWrap';
+import { Restaurant } from '../Restaurant/Restaurant';
 // import './Main.scss'
 
 export const Main = () => {
