@@ -2,9 +2,9 @@
 @use "/public/assets/scss/variables.scss" as *;
 @use "/public/assets/scss/mixins.scss" as *;
 
-.video-section {
-	// background-color: bisque;
+.video-section {	
 	padding-bottom: 50px;
+	text-align: center;
 }
 
 .video {
@@ -12,10 +12,7 @@
 	@include margin-block;
 
 	&__title {
-		color: rgb(247, 244, 212);
-		font-size: 24px;
-		text-align: center;
-		margin-bottom: $margin-b-30;
+		@include title;
 	}
 
 	&__post {
@@ -33,19 +30,9 @@
 	// }
 
 	&__btn {
-		display: block;
-		width: fit-content;
-		margin: 40px auto 0;
-		color: #3998fc;
-		font-size: 22px;
-		text-decoration: none;
-
-		&:hover {
-			cursor: pointer;
-			transform: scale(1.2);
-		}
+		@include btn;
 	}
-
+	
 	&__post {
 		// width: 90%;
 		margin: 0 auto;
@@ -55,4 +42,11 @@
 			// width: 100%;
 		}		
 	}
+}
+
+.html5-video-player a,
+.ytp-title-link,
+.ytp-title-text {
+	color: black;
+	
 }

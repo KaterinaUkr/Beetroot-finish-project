@@ -1,15 +1,42 @@
 @use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/font" as *;
 
 .header-menu {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.8);
 	
-	&__nav {
-		
+	&__logo {
+		width: 40px;
 	}
 	
-}
+	&__nav {
+		font-family: 'Montserrat';
+		text-transform: uppercase;
+		font-size: 20px;
+		letter-spacing: 0.1em;
 
+		&__item {
+			&:after {
+					content: "";
+					display: block;
+					height: 4px;
+					width: 110%;
+					background: none;					
+				}
+			&:hover:after {
+				content: "";
+					display: block;
+					height: 4px;
+					width: 110%;
+					background: linear-gradient(90deg,
+							$text-color 0%,
+							rgba(83, 243, 205, 0) 100%);
+					opacity:	 0.4;
+				}
+			}		
+		}
+	}
+	
 
 .navbar-expand {
  	z-index: 1; 	
@@ -18,8 +45,6 @@
 }
 
 .navbar-expand .navbar-nav .nav-link {
-	color: $color-yellow-light;
-	
-	font-family: 'Lora';
+	color: $color-yellow-light;	
 	padding: 10px 30px;
 }

@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import './Attractions.scss'
 
 import Posts from '../../Datafiles/Attraction.json'
+import { Link } from 'react-router-dom';
 
 export const Attractions = () => {
 
@@ -30,6 +31,7 @@ export const Attractions = () => {
 			<Slider {...settings}>
 				{
 					Posts.map(({ id, title, url }) => 
+					<Link className='attraction__title' key={id} to={`/attractions/${id}`}>
 					<li key={id} className='slick-wrapper'>
 						<Card className="bg-dark text-white attraction__post">
 						<Card.Img src={url} alt="Card image" className='attraction__post__image'/>
@@ -37,7 +39,7 @@ export const Attractions = () => {
 							<div className='attraction__text-block'>
 								<Card.Title className='attraction__text-block__title'>{title}</Card.Title>							
 									</div>
-							{/* <hr />		 */}
+							
 							<div className='attraction__text-block__text-more'>
 								
 								<Card.Text href="#" className='attraction__text-block__text'>Подробиці</Card.Text>
@@ -47,12 +49,12 @@ export const Attractions = () => {
 						</Card.ImgOverlay>			
 						</Card>
 					</li>
+					</Link>
 				
 			)}	
 
 			</Slider>
-			<Card.Link className='attraction__btn' href="/attractions">Переглянути всі  &#10230;</Card.Link>
-			{/* <Button className='attraction__btn' href="/attractions" variant="secondary" >Показати всі</Button> */}
+			<Card.Link className='attraction__btn' href="/attractions">Переглянути всі  &#10230;</Card.Link>			
 			</div>
 		
 		

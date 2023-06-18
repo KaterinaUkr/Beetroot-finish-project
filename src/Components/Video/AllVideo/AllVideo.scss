@@ -1,0 +1,33 @@
+@use "/public/assets/scss/reset.scss" as *;
+@use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/mixins.scss" as *;
+
+
+.all-video {
+	// height: 100vh;
+	padding-top: $padding-top-head;
+	height: 90vh;
+
+	&__title {
+		@include title;
+		@include margin-block;
+	}
+
+	&__btn {
+		@include btn-to-main;
+
+	}
+}
+
+// .video {
+// 	&__link {
+// 		list-style-type: none;
+// 	}	
+// }
+
+.card {
+		width: fit-content;
+	}
+.btn-outline-light {
+	@include btn-to-main;
+}

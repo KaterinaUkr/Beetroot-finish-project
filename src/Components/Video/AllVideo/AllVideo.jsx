@@ -1,10 +1,11 @@
-// import './Video.scss'
+import './AllVideo.scss'
 import Videos from '../../../Datafiles/Video.json'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Card, Button } from 'react-bootstrap';
+import { ContentWrap } from '../../Main/ContentWrap';
 
 export const AllVideo = () => {
 	const settings = {
@@ -16,21 +17,28 @@ export const AllVideo = () => {
 	}; 
 
 	return (
-		<div className='video-section'>		
-			<h2 className='video__title'>Here must be Video</h2>			
-			
+		<div className='all-video'>		
+		<ContentWrap>
+			<h2 className='all-video__title'>Here must be Video</h2>			
+			<div className='all-video__link'>
+			<Slider {...settings}>	
 				{
-					Videos.map(({ id, title, url }) => 
-					<li key={id}>
+				Videos.map(({ id, title, url }) => 
+					
+					<li key={id} className='all-video__item'>
 						<Card>
-							<iframe width="640" height="360" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>				
+							<iframe width="390" height="225" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>				
 						</Card>
 					</li>					
-			)}	
-
-			<Button href="/" variant="secondary">На головну</Button>
-			
-		</div>
+					
+						)}
+					</Slider >	
+				</div>
+				<div className='all-video__btn'>
+					<Button className='all-video__btn__item' href="/" variant="outline-light">На головну</Button>
+				</div>
+	</ContentWrap>
+		 </div> 
 		
 	)
 }

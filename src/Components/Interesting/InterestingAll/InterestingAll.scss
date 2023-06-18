@@ -3,7 +3,17 @@
 
 .interesting-all{
 	@include text;
-	margin-top: $margin-b-30;
+	@include margin-block;
+	margin-top: 80px;
+
+	& p{
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-size: 23px;
+		margin-bottom: 10px;
+	}
 
 	&__list {
 		list-style-type: square;
@@ -11,6 +21,13 @@
 		padding-left: 20px;
 	}
 	
+	&__btn {
+		@include btn-to-main;
 
-	
+	}
+
+}
+
+.btn-outline-light {
+	@include btn-to-main-color;
 }

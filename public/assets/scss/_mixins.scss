@@ -9,6 +9,85 @@
 	color: $text-color;
 	font-size: 20px;
 	font-family: 'Verdana';
-	letter-spacing: 0.05em;;
+	letter-spacing: 0.05em;
+	line-height: 1.5;	
+}
+
+@mixin text-post {
+	color: $text-color;
+	font-family: Arial;
+	letter-spacing: 0.05em;
+	font-size: 20px;
+	color: $text-color;
+	padding-left: 10px;
+	padding-right: 10px;
+	bottom: 20px;
+}
+
+@mixin title {
+	color: $text-color;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-family: 'Verdana';
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: $margin-b-30;
+}
+
+@mixin btn {
+	display: block;
+	width: fit-content;
+	margin: 40px auto 0;
+	color: $link-color;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: arial;
+	letter-spacing: 0.1em;
+	&:after {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 110%;
+			background: none;		
+			margin-top: 4px;	
+		}
+	
+		&:hover:after {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 110%;
+			background: linear-gradient(90deg,
+					$link-color 0%,
+					rgba(83, 243, 205, 0) 100%);
+			opacity: 0.4;
+		}
+}
+
+@mixin btn-to-main {
+	text-align: center;
+		margin-top: $margin-b-30;	
+		&__item {
+			font-size: 20px;
+			font-family: verdana;
+		}
 }
 	
+@mixin btn-to-main-color {
+	--bs-btn-color: #fffddb;
+	--bs-btn-border-color: #fffddb;
+	--bs-btn-hover-color: #000;
+	--bs-btn-hover-bg: #fffddb;
+	--bs-btn-hover-border-color: #fffddb;
+	--bs-btn-focus-shadow-rgb: 248, 249, 250;
+	--bs-btn-active-color: #000;
+	--bs-btn-active-bg: #fffddb;
+	--bs-btn-active-border-color: #fffddb;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fffddb;
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: #fffddb;
+	--bs-gradient: none;
+}

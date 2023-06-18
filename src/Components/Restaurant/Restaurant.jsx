@@ -46,8 +46,8 @@ const options = {
 	}, []);
 
 	return (
-	<div>
-			<h2>Here must be a restaurant</h2>
+	<div className='eat-block'>
+			<h2 className='eat-block__title'>Де поїсти</h2>
 			<ButtonGroup aria-label="Basic example">
 				<Button variant="secondary" onClick={ ()=>restsFilter('All') }>Всі</Button>
 				<Button variant="secondary" onClick={ ()=>restsFilter('Mediterranean') }>Середзерноморська</Button>

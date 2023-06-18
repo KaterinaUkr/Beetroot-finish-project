@@ -1,3 +1,6 @@
-.cafe-section {
-	background-color: aquamarine;
+.eat-block {
+
+	&__title {
+		@include title;
+	}
 }

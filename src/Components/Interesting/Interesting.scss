@@ -1,5 +1,14 @@
-
+@use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/mixins.scss" as *;
 
 .interesting {
-	background-color: darkslategray;
+	&__title {
+		@include title;
+	}
+
+	&__text {
+		@include text;
+	}
+
+	
 }
