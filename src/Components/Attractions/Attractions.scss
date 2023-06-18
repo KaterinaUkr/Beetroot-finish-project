@@ -1,6 +1,6 @@
-@use "../../assets/scss/reset.scss" as *;
-@use "../../assets/scss/variables.scss" as *;
-@use "../../assets/scss/mixins.scss" as *;
+@use "/public/assets/scss/reset.scss" as *;
+@use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/mixins.scss" as *;
 
 .attraction {
 	// background-color: rgb(200, 206, 206);
@@ -10,26 +10,35 @@
 		color: rgb(247, 244, 212);
 		font-size: 24px;
 		text-align: center;
+		margin-bottom: $margin-b-30;
 	}
 
 	&__text {
 		color: rgb(247, 244, 212);
 		font-size: 22px;
-		margin-top: 30px;
+		
 		margin-bottom: 30px;
 		line-height: 1.3;
 	}
 
 	&__btn {
 		display: block;
-		width: 200px;
-		margin: 30px auto 0;
+		width: fit-content;
+		margin: 40px auto 0;		
+		color: #3998fc;
+		font-size: 22px;
+		text-decoration: none;
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.2);
+		}
 	}
 
 	&__post {
 		width: 90%;
 		margin: 0 auto;
-		position: relative;
+		position: relative;		
 		
 		&__image {
 			width: 100%;			

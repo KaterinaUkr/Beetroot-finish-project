@@ -8,16 +8,18 @@ import { Card, Button } from 'react-bootstrap';
 
 export const Video = () => {
 	const settings = {
-    dots: true,
+		dots: true,
+		arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3
+		slidesToScroll: 3,
+		adaptiveHeight: true
 	}; 
 
 	return (
 		<div className='video-section'>		
-			<h2 className='video__title'>Here must be Video</h2>			
+			<h2 className='video__title'>Відео</h2>			
 			{/* <iframe width="640" height="360" src='https://www.youtube.com/embed/tTEqV_wO54Q' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
 			
 			{/* працює, але видає помилки  */}
@@ -25,16 +27,16 @@ export const Video = () => {
 				{
 					Videos.map(({ id, title, url }) =>
 					<li key={id}>
-						<Card>
-							<iframe width="640" height="360" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+						<Card className='video__post'>
+							<iframe width="390" height="225" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 						</Card>
 					</li>
 					
 			)}
 
 			</Slider>
-
-			<Button href="/videos" variant="secondary">Всі відео</Button>
+			<Card.Link className='video__btn' href="/videos">Переглянути всі  &#10230;</Card.Link>
+			{/* <Button href="/videos" variant="secondary">Всі відео</Button> */}
 			
 		</div>
 		

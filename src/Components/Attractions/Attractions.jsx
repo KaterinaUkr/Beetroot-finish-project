@@ -50,8 +50,9 @@ export const Attractions = () => {
 				
 			)}	
 
-			 </Slider>
-			<Button className='attraction__btn' href="/attractions" variant="secondary" >Показати всі</Button>
+			</Slider>
+			<Card.Link className='attraction__btn' href="/attractions">Переглянути всі  &#10230;</Card.Link>
+			{/* <Button className='attraction__btn' href="/attractions" variant="secondary" >Показати всі</Button> */}
 			</div>
 		
 		
