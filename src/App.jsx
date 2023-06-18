@@ -20,6 +20,7 @@ import { router } from './Pages/router.config';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { ContentWrap } from './Components/Main/ContentWrap';
 import { VideoItem } from './Pages/VideoItem';
+import { InterestingAll } from './Pages/InterestingAll';
 
 
 
@@ -35,7 +36,8 @@ function App() {
             <Route path="/attractions/:id" element={<AttractionItem />} />
             <Route path="/videos" element={<AllVideo />} />
             {/* <Route path="/videos/:id" element={<VideoItem />} /> */}
-            <Route path="/interesting" element={<Interesting />} />
+            <Route path="/interesting" element={<InterestingAll />} />
+           
             
           </Routes>
         

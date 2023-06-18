@@ -1,0 +1,14 @@
+@use "./variables.scss" as *;
+
+@mixin margin-block{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}	
+
+@mixin text{
+	color: $text-color;
+	font-size: 20px;
+	font-family: 'Verdana';
+	letter-spacing: 0.05em;;
+}
+	
