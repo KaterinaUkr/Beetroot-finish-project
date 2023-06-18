@@ -19,7 +19,7 @@ export const Video = () => {
 
 	return (
 		<div className='video-section'>		
-			<h2 className='video__title'>Відео</h2>			
+			<h2 className='video-section__title'>Відео</h2>			
 			<iframe width="720" height="405" src='https://www.youtube.com/embed/tTEqV_wO54Q' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 			
 			{/* працює, але видає помилки  */}
@@ -27,7 +27,7 @@ export const Video = () => {
 				{
 					Videos.map(({ id, title, url }) =>
 					<li key={id}>
-						<Card className='video__post'>
+						<Card className='video-section__post'>
 							<iframe width="390" height="225" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 						</Card>
 					</li>
@@ -35,7 +35,7 @@ export const Video = () => {
 			)}
 
 			</Slider> */}
-			<Card.Link className='video__btn' href="/videos">Переглянути всі  &#10230;</Card.Link>			
+			<Card.Link className='video-section__btn' href="/videos">Переглянути всі  &#10230;</Card.Link>			
 		</div>
 		
 	)

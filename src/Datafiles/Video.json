@@ -2,12 +2,14 @@
 	{
 		"id": 1,		
 		"title": "Харків - місто в якому хочеться жити. Найкращі парки України, оновлений зоопарк, найсмачніші заклади",
-		"url": "https://www.youtube-nocookie.com/embed/5sZIhB66hdg"
+		"url": "https://www.youtube-nocookie.com/embed/5sZIhB66hdg",
+		"poster": "https://i.ytimg.com/v1/5sZIhB66hdg/maxresdefault.jpg"
 	},
 	{
 		"id": 2,		
 		"title": "Успішний Харків",
-		"url": "https://www.youtube-nocookie.com/embed/tTEqV_wO54Q"
+		"url": "https://www.youtube-nocookie.com/embed/tTEqV_wO54Q",
+		"poster": "https://i.ytimg.com/vi/tTEqV_wO54Q/maxresdefault.jpg"
 	},
 	{
 		"id": 3,		

@@ -17,28 +17,30 @@ export const AllVideo = () => {
 	}; 
 
 	return (
-		<div className='all-video'>		
+		<div className='all-video'>
 		<ContentWrap>
-			<h2 className='all-video__title'>Here must be Video</h2>			
+			<h2 className='all-video__title'>Відео про Харків</h2>
 			<div className='all-video__link'>
-			<Slider {...settings}>	
+			<Slider {...settings}>
 				{
-				Videos.map(({ id, title, url }) => 
+				Videos.map(({ id, title, url }) =>
 					
 					<li key={id} className='all-video__item'>
 						<Card>
-							<iframe width="390" height="225" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>				
+							<iframe width="390" height="225" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 						</Card>
-					</li>					
+					</li>
 					
 						)}
-					</Slider >	
+					</Slider >
 				</div>
 				<div className='all-video__btn'>
 					<Button className='all-video__btn__item' href="/" variant="outline-light">На головну</Button>
 				</div>
 	</ContentWrap>
-		 </div> 
+		 </div>
 		
 	)
 }
+
+	

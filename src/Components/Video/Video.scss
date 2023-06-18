@@ -5,21 +5,30 @@
 .video-section {	
 	padding-bottom: 50px;
 	text-align: center;
-}
-
-.video {
-	// background-color: rgb(200, 206, 206);
-	@include margin-block;
 
 	&__title {
 		@include title;
 	}
 
+		
 	&__post {
 		width: fit-content;
 		background-color: black;
 		// border: solid 1px white;
 	}
+
+	&__btn {
+			@include btn;
+		}
+}
+
+// .video {
+	// background-color: rgb(200, 206, 206);
+	// @include margin-block;
+
+	
+
+	
 
 	// &__text {
 	// 	color: rgb(247, 244, 212);
@@ -29,20 +38,10 @@
 	// 	line-height: 1.3;
 	// }
 
-	&__btn {
-		@include btn;
-	}
 	
-	&__post {
-		// width: 90%;
-		margin: 0 auto;
-		position: relative;
-
-		&__image {
-			// width: 100%;
-		}		
-	}
-}
+	
+	
+// }
 
 .html5-video-player a,
 .ytp-title-link,
