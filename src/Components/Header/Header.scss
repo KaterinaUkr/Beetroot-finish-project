@@ -1,3 +1,4 @@
+@use "/public/assets/scss/reset" as *;
 @use "/public/assets/scss/variables.scss" as *;
 @use "/public/assets/scss/font" as *;
 @use "/public/assets/scss/responsive" as *;
@@ -18,6 +19,9 @@
 		@include xl {
 				font-size: 16px;
 			}
+		@include lg {
+			font-size: 15px;
+		}
 
 		&__item {
 			&:after {
@@ -35,7 +39,7 @@
 					background: linear-gradient(90deg,
 							$text-color 0%,
 							rgba(83, 243, 205, 0) 100%);
-					opacity:	 0.4;
+					opacity:	 0.4;					
 				}
 			}		
 		}
@@ -61,6 +65,7 @@
 .nav-link:focus,
 .nav-link:hover  {
 	color: $text-color;
+	outline: none;
 }
 .navbar-toggler-icon {
 	color: $text-color;

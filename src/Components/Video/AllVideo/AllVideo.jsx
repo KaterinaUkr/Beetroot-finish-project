@@ -58,12 +58,12 @@ export const AllVideo = () => {
 					<LazyLoadComponent >
 					<li key={id} className='all-video__item'>						
 							<Card>										
-								<iframe width="854" height="480" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen
+								<iframe className='all-video__item-list' width="854" height="480" src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen
 								style={{
 									backgroundImage: `url(${poster})`,
 									backgroundSize: 'contain',
-									width: "854px",
-									height: "480px"
+									// width: "854px",
+									// height: "480px"
 								}}
 								></iframe>
 								</Card>							

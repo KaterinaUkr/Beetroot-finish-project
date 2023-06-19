@@ -20,6 +20,10 @@ function restsFilter(establishmentTypeAndCuisineTags) {
 
 	console.log(filtered)
 }
+	
+	useEffect(() => {
+		setFiltered(rests)
+	}, [rests])
 
 const options = {
 		method: 'GET',
@@ -44,6 +48,8 @@ const options = {
 			console.error(error);
 		});
 	}, []);
+
+	
 
 	return (
 		<div >

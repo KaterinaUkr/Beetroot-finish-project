@@ -1,9 +1,10 @@
 @use "/public/assets/scss/reset.scss" as *;
 @use "/public/assets/scss/variables.scss" as *;
 @use "/public/assets/scss/mixins.scss" as *;
+@use "/public/assets/scss/responsive" as *;
 
 .all-attraction {
-	padding-top: $padding-top-head;
+	// padding-top: $padding-top-head;
 
 	&__title {
 			@include title;
@@ -17,6 +18,9 @@
 	&__block {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		@include md {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__post {

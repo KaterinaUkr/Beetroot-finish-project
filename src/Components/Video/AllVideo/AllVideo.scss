@@ -1,12 +1,12 @@
 @use "/public/assets/scss/reset.scss" as *;
 @use "/public/assets/scss/variables.scss" as *;
 @use "/public/assets/scss/mixins.scss" as *;
+@use "/public/assets/scss/responsive" as *;
 
 
-.all-video {
-	// height: 100vh;
-	padding-top: $padding-top-head;
-	// height: 90vh;
+.all-video {	
+	// padding-top: $padding-top-head;
+	
 
 	&__title {
 		@include title;
@@ -15,7 +15,6 @@
 
 	&__btn {
 		@include btn-to-main;
-
 	}
 
 	&__link {
@@ -26,6 +25,25 @@
 
 	&__item {
 		margin-bottom: 30px;
+	}
+	&__item-list {
+		width: 854px;
+		height: 480px;
+		
+		@include lg {
+			width: 640px;
+			height: 360px;
+		}
+	
+		@include md {
+			width: 480px;
+			height: 250px;
+		}
+	
+		@include sm {
+			width: 280px;
+			height: 210px;
+		}
 	}
 }
 
