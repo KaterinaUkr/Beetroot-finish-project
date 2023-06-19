@@ -3,7 +3,7 @@
 @use "/public/assets/scss/mixins.scss" as *;
 
 .attraction {
-	// background-color: rgb(200, 206, 206);
+	
 	@include margin-block;
 
 	&__title {
@@ -73,8 +73,7 @@
 	opacity: .75;
 	color: rgb(244, 252, 225);
 }
-.card-img-overlay {
-	// background: linear-gradient(180deg, rgba(6, 4, 9, 0.9) 0%, rgba(255, 255, 255, 0.6) 100%)
+.card-img-overlay {	
 	background: rgba(6, 4, 9, 0.7);
 	display:flex;
 	flex-direction: column;

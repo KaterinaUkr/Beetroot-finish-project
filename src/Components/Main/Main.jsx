@@ -16,7 +16,8 @@ export const Main = () => {
 			<Attractions></Attractions> 
 			<Video></Video>
 			<Restmain></Restmain>
-			<Interesting></Interesting>    
+			<Interesting></Interesting>   
+				
 		</ContentWrap>
 		</>
 	)

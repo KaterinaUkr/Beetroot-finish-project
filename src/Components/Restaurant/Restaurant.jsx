@@ -49,8 +49,6 @@ const options = {
 		});
 	}, []);
 
-	
-
 	return (
 		<div >
 			<ContentWrap>

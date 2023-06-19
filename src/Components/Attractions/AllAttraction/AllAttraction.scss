@@ -3,9 +3,7 @@
 @use "/public/assets/scss/mixins.scss" as *;
 @use "/public/assets/scss/responsive" as *;
 
-.all-attraction {
-	// padding-top: $padding-top-head;
-
+.all-attraction {	
 	&__title {
 			@include title;
 			@include margin-block;
@@ -50,7 +48,7 @@
 		&__more {
 			cursor: pointer;
 		}
-}
+	}
 }
 
 .slick-wrapper.list {

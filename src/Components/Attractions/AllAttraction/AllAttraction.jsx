@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 import Posts from '../../../Datafiles/Attraction.json'
 import { ContentWrap } from '../../Main/ContentWrap'
 
-
-
 export const AllAttraction = () => {
 
 	return (
@@ -35,8 +33,7 @@ export const AllAttraction = () => {
 				
 			<div className='all-attraction__btn'>
 				<Button className='all-attraction__btn__item'  href="/" variant="outline-light">На головну</Button>
-			</div>			
-				
+			</div>							
 		</div>
 	</ContentWrap>		
 	)

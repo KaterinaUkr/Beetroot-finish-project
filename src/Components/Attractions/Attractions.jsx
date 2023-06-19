@@ -1,9 +1,9 @@
-import { Button, Card } from 'react-bootstrap'
+import './Attractions.scss'
+
+import { Card } from 'react-bootstrap'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-import './Attractions.scss'
 
 import Posts from '../../Datafiles/Attraction.json'
 import { Link } from 'react-router-dom';
