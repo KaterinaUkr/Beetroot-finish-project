@@ -6,7 +6,7 @@
 .all-video {
 	// height: 100vh;
 	padding-top: $padding-top-head;
-	height: 90vh;
+	// height: 90vh;
 
 	&__title {
 		@include title;
@@ -17,13 +17,17 @@
 		@include btn-to-main;
 
 	}
-}
 
-// .video {
-// 	&__link {
-// 		list-style-type: none;
-// 	}	
-// }
+	&__link {
+		list-style-type: none;
+		margin: 0 auto;
+		width: fit-content;
+	}	
+
+	&__item {
+		margin-bottom: 30px;
+	}
+}
 
 .card {
 		width: fit-content;
@@ -31,4 +35,5 @@
 .btn-outline-light {
 	@include btn-to-main;
 }
+
 

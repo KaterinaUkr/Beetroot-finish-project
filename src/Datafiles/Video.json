@@ -3,7 +3,7 @@
 		"id": 1,		
 		"title": "Харків - місто в якому хочеться жити. Найкращі парки України, оновлений зоопарк, найсмачніші заклади",
 		"url": "https://www.youtube-nocookie.com/embed/5sZIhB66hdg",
-		"poster": "https://i.ytimg.com/v1/5sZIhB66hdg/maxresdefault.jpg"
+		"poster": "https://i.ytimg.com/vi/5sZIhB66hdg/maxresdefault.jpg"
 	},
 	{
 		"id": 2,		
@@ -14,57 +14,68 @@
 	{
 		"id": 3,		
 		"title": "Харків сьогодні. Любиме місто",
-		"url": "https://www.youtube-nocookie.com/embed/Ai2bgElLmmU"		
+		"url": "https://www.youtube-nocookie.com/embed/Ai2bgElLmmU",
+		"poster": "https://i.ytimg.com/vi/Ai2bgElLmmU/maxresdefault.jpg"		
 	},
 	{
 		"id": 4,		
 		"title": "Парк Горького. Харків сьогодні",
-		"url": "https://www.youtube-nocookie.com/embed/XpI0RgS8Sx8"		
+		"url": "https://www.youtube-nocookie.com/embed/XpI0RgS8Sx8",
+		"poster": "https://i.ytimg.com/vi/XpI0RgS8Sx8/maxresdefault.jpg"			
 	},
 	{
 		"id": 5,		
 		"title": "Саржин Яр",
-		"url": "https://www.youtube-nocookie.com/embed/h0Af-WP-oo0"
+		"url": "https://www.youtube-nocookie.com/embed/h0Af-WP-oo0",
+		"poster": "https://i.ytimg.com/vi/h0Af-WP-oo0/maxresdefault.jpg"	
 	},
 	{
 		"id": 6,		
 		"title": "Фентезі-парк",
-		"url": "https://www.youtube-nocookie.com/embed/U78sNvYBUmk"
+		"url": "https://www.youtube-nocookie.com/embed/U78sNvYBUmk",
+		"poster": "https://i.ytimg.com/vi/U78sNvYBUmk/maxresdefault.jpg"	
 	},
 
 	{
 		"id": 7,		
 		"title": "Любий, рідний, найгарніший Харків",
-		"url": "https://www.youtube-nocookie.com/embed/81-htiYBi-Q"
+		"url": "https://www.youtube-nocookie.com/embed/81-htiYBi-Q",
+		"poster": "https://i.ytimg.com/vi/81-htiYBi-Q/maxresdefault.jpg"	
 	},
 	{
 		"id": 8,		
 		"title": "Харків, 367 років",
-		"url": "https://www.youtube-nocookie.com/embed/exau1MOkXY4"
+		"url": "https://www.youtube-nocookie.com/embed/exau1MOkXY4",
+		"poster": "https://i.ytimg.com/vi/exau1MOkXY4/maxresdefault.jpg"	
 	},
 	{
 		"id": 9,		
 		"title": "Сухий фонтан",
-		"url": "https://www.youtube-nocookie.com/embed/YVfmC0vQ6YQ?list=RDCMUCdrmwTDk_0E9UgnqUtTf71A"
+		"url": "https://www.youtube-nocookie.com/embed/YVfmC0vQ6YQ?list=RDCMUCdrmwTDk_0E9UgnqUtTf71A",
+		"poster": "https://i.ytimg.com/vi/YVfmC0vQ6YQ?list=RDCMUCdrmwTDk_0E9UgnqUtTf71A/maxresdefault.jpg"	
 	},
 	{
 		"id": 10,		
 		"title": "Харків",
-		"url": "https://www.youtube-nocookie.com/embed/ikJiQH-rkHQ"
+		"url": "https://www.youtube-nocookie.com/embed/ikJiQH-rkHQ",
+		"poster": "https://i.ytimg.com/vi/ikJiQH-rkHQ/maxresdefault.jpg"	
 	},
 	{
 		"id": 11,		
 		"title": "Відкриття ялинки 2021",
-		"url": "https://www.youtube-nocookie.com/embed/-YruhfXwph8"
+		"url": "https://www.youtube-nocookie.com/embed/-YruhfXwph8",
+		"poster": "https://i.ytimg.com/vi/-YruhfXwph8/maxresdefault.jpg"	
 	},
 	{
 		"id": 12,		
 		"title": "Сад Шевченка",
-		"url": "https://www.youtube-nocookie.com/embed/QgN4I1cvql4"
+		"url": "https://www.youtube-nocookie.com/embed/QgN4I1cvql4",
+		"poster": "https://i.ytimg.com/vi/QgN4I1cvql4/maxresdefault.jpg"	
 	},
 	{
 		"id": 13,		
 		"title": "Фельдман Екопарк",
-		"url": "https://www.youtube-nocookie.com/embed/a7n2loga3uo"
+		"url": "https://www.youtube-nocookie.com/embed/a7n2loga3uo",
+		"poster": "https://i.ytimg.com/vi/a7n2loga3uo/maxresdefault.jpg"	
 	}
 ]
