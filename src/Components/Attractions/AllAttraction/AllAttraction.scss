@@ -1,0 +1,55 @@
+@use "/public/assets/scss/reset.scss" as *;
+@use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/mixins.scss" as *;
+
+.all-attraction {
+	padding-top: $padding-top-head;
+
+	&__title {
+			@include title;
+			@include margin-block;
+		}
+
+	&__btn {
+		@include btn-to-main;
+	}
+
+	&__block {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	&__post {
+		max-width: 90%;		
+		margin: 0 auto;
+		position: relative;
+
+		&__image {
+			width: 100%;
+		}
+	}
+
+	&__text-block {
+		width: -webkit-fill-available;
+		@include text-post;
+
+		&__text-more {
+			@include text-post;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-top: solid 1px $text-color;
+			padding-top: 8px;
+		}
+
+		&__text,
+		&__more {
+			cursor: pointer;
+		}
+}
+}
+
+.slick-wrapper.list {
+	list-style-type: none;
+	margin-bottom: 30px;
+}

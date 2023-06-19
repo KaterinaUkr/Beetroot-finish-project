@@ -55,11 +55,14 @@
 	}	
 }
 
-
- .slick-track {
- 	display: flex;
+.slick-wrapper.attraction {
+	list-style-type: none;
+	width: 90%;
+}
+.slick-track {
+	display: flex;
 	align-items: center;
- }
+}
 
 .slick-dots li button:before  {
 	opacity: .25;

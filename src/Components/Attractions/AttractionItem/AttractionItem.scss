@@ -1,0 +1,21 @@
+@use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/mixins.scss" as *;
+
+.attraction-item {
+	@include margin-block;
+	margin-top: 80px;
+	&__text {
+		@include text;
+		margin-top: 30px;
+	}
+	&__title {
+		@include title;
+		@include margin-block;
+	}
+	&__btn {
+		@include btn-to-main;
+		margin-top: 0;
+		margin-bottom: 50px;
+
+	}
+}

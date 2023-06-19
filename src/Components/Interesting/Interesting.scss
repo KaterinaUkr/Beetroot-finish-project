@@ -10,5 +10,7 @@
 		@include text;
 	}
 
-	
+	&__btn {
+		@include btn;
+	}
 }

@@ -31,14 +31,14 @@ export const Attractions = () => {
 			<Slider {...settings}>
 				{
 					Posts.map(({ id, title, url }) => 
-					<Link className='attraction__title' key={id} to={`/attractions/${id}`}>
-					<li key={id} className='slick-wrapper'>
+					<Link className='attraction__list' key={id} to={`/attractions/${id}`}>
+					<li key={id} className='slick-wrapper attraction'>
 						<Card className="bg-dark text-white attraction__post">
 						<Card.Img src={url} alt="Card image" className='attraction__post__image'/>
 						<Card.ImgOverlay>
 							<div className='attraction__text-block'>
 								<Card.Title className='attraction__text-block__title'>{title}</Card.Title>							
-									</div>
+							</div>
 							
 							<div className='attraction__text-block__text-more'>
 								
