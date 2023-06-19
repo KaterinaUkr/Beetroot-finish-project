@@ -2,8 +2,7 @@
 @use "/public/assets/scss/mixins.scss" as *;
 
 .eat-block {
-	@include margin-block;
-	padding-top: 80px;
+	@include margin-block;	
 	min-height: 100vh;
 	text-align: center;
 	&__title {		

@@ -3,8 +3,6 @@ import './AttractionItem.scss'
 import { Button, Card } from 'react-bootstrap'
 import Posts from '../../../Datafiles/Attraction.json'
 import { useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import axios from 'axios';
 import { ContentWrap } from '../../Main/ContentWrap';
 
 export const AttractionItem = () => {	

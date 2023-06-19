@@ -5,7 +5,6 @@ import { Header } from './Components/Header/Header';
 import { AllVideo } from './Pages/AllVideo';
 import { Home } from './Pages/Home';
 import { AllAttraction } from './Pages/AllAttraction';
-import { Interesting } from './Pages/Interesting';
 import { AttractionItem } from './Pages/AttractionItem';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { InterestingAll } from './Pages/InterestingAll';

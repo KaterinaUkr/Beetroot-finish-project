@@ -1,7 +1,7 @@
 import { ContentWrap } from '../../Main/ContentWrap';
 import './InterestingAll.scss'
 
-import { Button, ListGroup } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 export const InterestingAll = () => {
 	return (

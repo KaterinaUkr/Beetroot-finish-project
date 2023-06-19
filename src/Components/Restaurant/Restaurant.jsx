@@ -1,5 +1,5 @@
 import './Restaurant.scss'
-import { Button, ButtonGroup, Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Button, ButtonGroup, Card, ListGroup } from 'react-bootstrap'
 import React, { useEffect, useState, } from "react";
 
 import axios from 'axios';
