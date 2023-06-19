@@ -1,3 +1,14 @@
+@use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/font" as *;
+@use "/public/assets/scss/responsive" as *;
+@use "/public/assets/scss/mixins" as *;
+
 .footer {
-	background-color: antiquewhite;
+	display: flex;
+	@include text-footer;	
+	justify-content: space-between;
+	@include sm {
+		flex-direction: column;
+		text-align: center;
+	}
 }

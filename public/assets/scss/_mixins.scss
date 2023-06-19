@@ -1,21 +1,37 @@
 @use "./variables.scss" as *;
+@use "./responsive" as *;
 
 @mixin margin-block{
 	margin-top: 50px;
 	margin-bottom: 50px;
+	@include md {
+			margin-top: 35px;
+			margin-bottom: 35px;
+		}
 }	
+
+@mixin margin-post {	
+	margin-bottom: 40px;
+}
 
 @mixin text{
 	color: $text-color;
 	font-size: 20px;
-	font-family: 'Verdana';
+	font-family: $font-verdana;
 	letter-spacing: 0.05em;
 	line-height: 1.5;	
+}
+@mixin text-footer {
+	color: $text-footer;
+	font-size: 12px;
+	font-family: $font-verdana;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
 }
 
 @mixin text-post {
 	color: $text-color;
-	font-family: Arial;
+	font-family: $font-arial;
 	letter-spacing: 0.05em;
 	font-size: 20px;
 	color: $text-color;
@@ -28,11 +44,12 @@
 	color: $text-color;
 	font-size: 22px;
 	text-transform: uppercase;
-	font-family: 'Verdana';
+	font-family: $font-verdana;
 	letter-spacing: 0.05em;
 	line-height: 1.5;
 	text-align: center;
 	margin-bottom: $margin-b-30;
+	
 }
 
 @mixin btn {
@@ -71,7 +88,7 @@
 		margin-top: $margin-b-30;	
 		&__item {
 			font-size: 20px;
-			font-family: verdana;
+			font-family: $font-verdana;
 		}
 }
 	
@@ -90,4 +107,11 @@
 	--bs-btn-disabled-bg: transparent;
 	--bs-btn-disabled-border-color: #fffddb;
 	--bs-gradient: none;
+}
+
+@mixin position-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

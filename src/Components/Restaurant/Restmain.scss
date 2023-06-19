@@ -1,17 +1,17 @@
 @use "/public/assets/scss/variables.scss" as *;
 @use "/public/assets/scss/mixins.scss" as *;
 
-.interesting {
+.rest {
 	@include margin-block;
 	&__title {
-		@include title;
-	}
-
-	&__text {
-		@include text;
-	}
-
-	&__btn {
-		@include btn;
-	}
+			@include title;
+		}
+	
+		&__text {
+			@include text;
+		}
+	
+		&__btn {
+			@include btn;
+		}
 }

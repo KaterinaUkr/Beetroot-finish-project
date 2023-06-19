@@ -1,0 +1,10 @@
+@use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/font" as *;
+@use "/public/assets/scss/responsive" as *;
+
+.contentWrap {
+	@include xl {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+}

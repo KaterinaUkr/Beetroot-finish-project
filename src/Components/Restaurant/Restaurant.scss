@@ -1,6 +1,41 @@
-.eat-block {
+@use "/public/assets/scss/variables.scss" as *;
+@use "/public/assets/scss/mixins.scss" as *;
 
-	&__title {
+.eat-block {
+	@include margin-block;
+	padding-top: 80px;
+	min-height: 100vh;
+	text-align: center;
+	&__title {		
 		@include title;
 	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-content: center;
+		width: fit-content;
+		grid-gap: 80px;
+		margin: 0 auto;		
+	}
+
+	&__item {
+		@include margin-post;
+		@include text;
+	}
+
+	&__image {
+		width: 285px;
+		height: 190px;
+	}
+	// &__filter {
+	// 	margin: 0 auto;
+	// }
+	&__btn {
+		@include btn-to-main;
+		margin-bottom: 40px;
+		
+	}
 }
+
+

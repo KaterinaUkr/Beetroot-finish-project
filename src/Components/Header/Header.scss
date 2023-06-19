@@ -1,9 +1,10 @@
 @use "/public/assets/scss/variables.scss" as *;
 @use "/public/assets/scss/font" as *;
+@use "/public/assets/scss/responsive" as *;
 
 .header-menu {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: $color-bg-text;
 	
 	&__logo {
 		width: 40px;
@@ -14,6 +15,9 @@
 		text-transform: uppercase;
 		font-size: 20px;
 		letter-spacing: 0.1em;
+		@include xl {
+				font-size: 16px;
+			}
 
 		&__item {
 			&:after {
@@ -44,7 +48,21 @@
 	width: 100%;
 }
 
-.navbar-expand .navbar-nav .nav-link {
-	color: $color-yellow-light;	
+.navbar-nav, 
+.nav-link {
+	color: $text-color;	
 	padding: 10px 30px;
+	z-index: 3;
+	background-color: black;
+	text-align: center;
 }
+
+.navbar-nav:hover,
+.nav-link:focus,
+.nav-link:hover  {
+	color: $text-color;
+}
+.navbar-toggler-icon {
+	color: $text-color;
+}
+

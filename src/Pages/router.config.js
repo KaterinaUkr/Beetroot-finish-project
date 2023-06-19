@@ -4,6 +4,7 @@ import { AllVideo } from './AllVideo';
 import { AllAttraction } from './AllAttraction';
 import { Home } from './Home';
 import { Interesting } from './Interesting';
+import { Restaurant } from "./Restaurant";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
     {
     path: "/videos",      
     element: <AllVideo />,
+  },
+  {
+    path: "/rest",      
+    element: <Restaurant />,
   },
      {
     path: "/interesting",

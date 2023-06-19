@@ -9,7 +9,7 @@ export const Fullscreen = () => {
 			<div className='fullscreen__block'>
 				<div className='fullscreen__block__text'>Привіт!</div>
 				<div className='fullscreen__block__text'>Я познайомлю тебе з Харковом</div>
-				<button className='fullscreen__block__btn'>Поїхали</button>
+				<button href='/' className='fullscreen__block__btn'>Поїхали</button>
 			</div>
 			
 			

@@ -4,7 +4,7 @@ import { Attractions } from '../Attractions/Attractions';
 import { Video } from '../Video/Video';
 import { Interesting } from '../Interesting/Interesting';
 import { ContentWrap } from './ContentWrap';
-import { Restaurant } from '../Restaurant/Restaurant';
+import { Restmain } from '../Restaurant/Restmain';
 // import './Main.scss'
 
 export const Main = () => {
@@ -15,7 +15,7 @@ export const Main = () => {
 				
 			<Attractions></Attractions> 
 			<Video></Video>
-			{/* <Restaurant></Restaurant> */}
+			<Restmain></Restmain>
 			<Interesting></Interesting>    
 		</ContentWrap>
 		</>
